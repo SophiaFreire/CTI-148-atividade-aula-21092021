@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>exercicio18</title>
+
+
+</head>
+
+<body bgcolor="MistyRose">
+    <h1 align="center">Exercicío 18 </h1><br>
+    <center>
+        <table border="1" width="500" height="200" bgcolor="E0FFFF">
+            <tr>
+                <td align="center">
+                    <h2>A tabuada de 1 a 20</h2>
+            </tr>
+            <tr>
+
+                </td align="center">
+                <td align="center">
+                    <script language="javascript">
+                        function numeros(...args) {
+                            for (const number of args) {
+                                Tabuada(number);
+                            }
+                        }
+
+                        function Tabuada(numero) {
+                            let color_td;
+
+                            document.write("<table border='1px' style='margin: 10px'>");
+
+                            color_td = "#E6E6FA";
+                            document.write("<td style='width:30px;background-color: " + color_td + "'>Multiplicando</td>");
+
+                            for (let i = 1; i < 11; i++) {
+                                document.write("<td style='width:30px;background-color: " + color_td + "'>" + i + "</td>");
+                            }
+
+                            document.write("<tr style='height:30px;'>");
+
+                            color_td = "#FFFFF0";
+                            document.write("<td style='width:30px;background-color: " + color_td + "'>Resultado</td>");
+
+                            for (let j = 1; j < 11; j++) {
+                                document.write("<td style='width:30px;background-color:" + color_td + "'>" + j * numero + "</td>");
+                            }
+
+                            document.write("</tr>");
+
+                            document.write("</table>");
+                        }
+
+                        numeros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+                    </script>
+                </td align="center">
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

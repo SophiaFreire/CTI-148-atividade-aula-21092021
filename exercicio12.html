@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>exercicio12</title>
+
+</head>
+
+<body bgcolor="MistyRose">
+    <h1 align="center">Exercicío 12 </h1><br>
+    <center>
+        <table border="1" width="500" height="200" bgcolor="E0FFFF">
+            <tr>
+                <td align="center">
+                    <h2> Relação peso/altura²</h2>
+            </tr>
+            <tr>
+
+                </td align="center">
+                <td align="center">
+                    <script language="javascript">
+                        var peso, altura, R, total
+                        altura = parseFloat(window.prompt("Digite a sua altura:"));
+                        peso = parseFloat(window.prompt("Digite o seu peso:"));
+                        R = altura * altura;
+                        total = peso / R;
+                        if (total < 20)
+                            document.write("<h1>Abaixo do peso: ", " </h1>");
+                        else if (total < 25)
+                            document.write("<h1>Peso ideal: ", " </h1>");
+                        else if (total >= 25)
+                            document.write("<h1>Acima do peso: ", " </h1>");
+                        else
+                            document.write("<h1>Tente novamente ", " </h1>");
+                    </script>
+                </td align="center">
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
